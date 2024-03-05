@@ -1,1 +1,1 @@
-# hippo-scrapper
+# hippo-scraper
