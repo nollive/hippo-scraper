@@ -3,9 +3,6 @@ import json
 from PIL import Image # PYTHON IMAGE LIBRARY
 import numpy as np
 
-import numpy as np
-
-
 
 def rgb_median(image):
     # On converti en RGB (eviter le cas de la "4ème composante" RGB ( si jamais l'image contient de la transparence)
