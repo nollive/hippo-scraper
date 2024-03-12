@@ -7,10 +7,10 @@ import os
 
 # Fonction pour récuperer l'image de profil.
 def download_images(user_id):
-    url = f"https://hippocampus.ec-nantes.fr/pluginfile.php/{user_id}/user/icon/boost/f3" #f3 permet d'obtenir l'image en résolution "maximale".
+    url = f"https://hippocampus.ec-nantes.fr/pluginfile.php/{user_id}/user/icon/boost/f3" #f3 permet d'obtenir l'image en résolution "maximale". (environ 40ko/image)
     response = requests.get(url, stream=True)
     if response.status_code == 200:
-    # On enregistre les image dans le dossier image
+    # On enregistre les image dans le dossier images
         if not os.path.exists('images'):
             os.makedirs('images')
         with open(f'images/{user_id}.png', 'wb') as file:
